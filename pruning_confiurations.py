@@ -459,20 +459,4 @@ model_size_bytes = sum(p.numel() * p.element_size() for p in model.parameters())
 
 print("Model size (bytes):", model_size_bytes)
 print("Model size (MB):", model_size_bytes / (1024 * 1024))
-# %%
-zero_count = 0
-for param in model.parameters():
-    zero_count += torch.sum(param == 0.0000).item()
 
-print("Number of weights with value 0:", zero_count)
-# %%
-zero_count = 0
-threshold = 1e-6  # Adjust threshold as needed
-
-for param in model.parameters():
-    zero_count += torch.sum(torch.abs(param) < threshold).item()
-
-print("Number of weights close to zero:", zero_count)
-
-
-# %%
