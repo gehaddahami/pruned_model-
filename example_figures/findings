@@ -1,0 +1,15 @@
+three configurations have been done already (10% pruned, 20% pruned and 30% pruned) 
+for faster conclusions: these configurations where all examind at SNR = 30% 
+
+* figures for the other configurations will be uploaded later. 
+
+results: for (10%, 20%, 30%) respectively 
+
+accuracy: 91,21% , 89,45% , 86,748% 
+time for one image of output: 0,4479ms  , 0,426ms  , 0,4213ms   
+
+
+stats for the original quantized modelL: 
+
+accuracy: 93,34% 
+time for one image of output: 0,4997ms  
